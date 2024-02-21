@@ -1,7 +1,7 @@
 import time
 
-str = "This is my first Python Project!" 
-word_count = len(str.split())
+strg = "This is my first Python Project!" 
+word_count = len(strg.split())
 
 def createbox():
     print("/////"*30)
@@ -12,11 +12,11 @@ def createbox():
 while True:  
     t0 = time.time()
     createbox()
-    print(str,'\n')
-    inputText = str(input())
+    print(strg,'\n')
+    inputText = input()
     t1 = time.time()
     lengthOfInput = len(inputText.split())
-    accuracy = len(set(inputText.split()) & set(str.split())) 
+    accuracy = len(set(inputText.split()) & set(strg.split())) 
     accuracy = (accuracy/word_count)
     timeTaken = (t1 - t0)
 
